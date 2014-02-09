@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		p.definition-table-caption{
+			text-align:center;
+			font-size:1.6rem;
+		}
+
+		dl.definition-table{
+			display:table;
+		}
+
+		dl.definition-table{
+			display:table;
+			width:100%;
+		}
+		dl.definition-table dt{
+			display:table-cell;
+			/*			text-align:center;*/
+		}
+		dl.definition-table dt img{
+/*			margin:.5rem;*/
+			width:14rem;
+			display: block;
+			height: auto;
+			max-width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+/*
+		dl.definition-table dt:after{
+			display:block;
+			position:relative;
+			left:0;
+			top:0rem;
+			font-size:1.4rem;
+			text-align:center;
+		}*/
+
+		@media screen and (max-width: 600px) {
+			dl.definition-table{
+				display:table;
+				padding:1rem;
+			}
+			dl.definition-table dt{
+				display:inline-block;
+				float:left;
+				clear:left;
+			}
+			dl.definition-table dt img{
+				vertical-align:middle;
+				margin-right:.5rem;
+				display: block;
+				height: auto;
+				max-width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			dl.definition-table dt:after{
+				display:none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<figure style="margin:2rem">
+			<p class="definition-table-caption">Rock -- Paper -- Scissors</p>
+			<dl class="definition-table">
+				<dt><img src="http://static4.wikia.nocookie.net/__cb20131027211656/clubpenguin/images/3/37/Pet_Rock.jpg" alt="Rock">
+				</dt>
+				<dt><img src="http://upstreamdownstream.org/wp-content/uploads/2012/08/paper.jpg" alt="Paper">
+				</dt>
+				<dt><img src="http://www.shann.com.au/assets/media/product_images/red_handle_scissor.jpg" alt="Scissors">
+				</dt>
+			</dl>
+		</figure>
+	</header>
+
+	<script src="rockpaperscissors.js"></script>
+</body>
+</html>
+
+
